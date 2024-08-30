@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formdemo</title>
+</head>
+<body>
+    <!--For Forms:form tag-->
+    <!--div tag for seperating into groups-->
+    <!--action attributes for what action to be happened when we press this button-->
+    <!--method="post" means it will store to the database-->
+    <!--method="get" means it will get the input-->
+    <!-- enctype="multipart/form-data" means the form can have big files also , so it will be sent to the backend in mutiple parts -->
+    <form action="index.html" method="post" enctype="multipart/form-data">
+        <div>
+            <!--label for Display name-->
+            <label for="username">Username</label>
+            <!--input for input box-->
+            <!--Required attribute:without this input the form will not submit-->
+            <!--id attribute for connecting label and input-->
+            <!--name attribute means it will store the typed text to the database in that name-->
+            <input type="text" name="username" id="username" placeholder="Username" required>
+        </div>
+            <!-- label for Display name -->
+            <label for="password">Password</label>
+            <!--input for input box-->
+            <!--Required attribute:without this input the form will not submit-->
+            <!--type attribute default to text
+            but for password type="password"-->
+            <!--name attribute means it will store the typed text to the database in that name-->
+            <!-- Placeholder attribute:It will come inside the box in a greyed text -->
+            <input type="password" name="password" id="password" placeholder="Password" minlength="8" required>
+         </div>
+         <div>
+            <label for="phno">Phone</label>
+            <!--Required attribute:without this input the form will not submit-->
+            <!-- Value attribut:It will come defaultly -->
+            <input type="text" id="phno"  name="phno" placeholder="Phone Number" value="+91 " maxlength="14" minlength="14">
+         </div>
+         <div>
+            <label for="dob">Date of Birth</label>
+            <input type="date" name="dob" id="dob" placeholder="DOB" min="1990-01-01" max="2024-01-25">
+         </div>
+         <div>
+            <label for="email">Email</label>
+            <input type="email" name="email"id="email" placeholder="Email" required>
+        </div>
+        <div>
+            <label for="">Gender</label>
+            <!-- If we give the same name='gender' only one input can be selected for that name -->
+            <input type="radio" name="gender" id="male" value="male"required>
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female" value="female" required>
+            <label for="female">Female</label>
+        </div>
+        <div>
+            <label for="state">State</label>
+            <!-- If we want multiple options to be selected add "multiple" attribute to select -->
+            <select name="state" id="state">
+                <option value="Tamilnadu">Tamilnadu</option>
+                <option value="AndhraPradesh">AndhraPradesh</option>
+                <option value="Kerala">Kerala</option>
+                <option value="Karnataka">Karnataka</option>
+                <option value="Maharashtra">Maharashtra</option>
+                <option value="MadhyaPradesh">MadhyaPradesh</option>
+                <option value="NewDelhi">NewDelhi</option>
+            </select>
+        </div>
+        <div>
+            <label for="file">Resume</label>
+            <input type="file" name="file" id="file">
+        </div>
+        <div>
+            <label for="color">Colour</label>
+            <input type="color" name="color" id="color">
+        </div>
+        <div>
+            <!-- there is hidden type in text input,which will not be shown to user -->
+            <input type="hidden" name="hidden" id="hidden">
+        </div>
+        <div>
+            <!-- For Entering a paragraph -->
+             <label for="about">About</label>
+             <textarea name="About" id="about" cols="50" rows="10" placeholder="Type Here"></textarea>
+        </div>
+        <div>
+            <input type="checkbox" name="correct" id="Correct" >
+            <label for="Correct">All the given Information is correct</label>
+        </div>
+        <div>
+            <input type="checkbox" name="smsalert" id="sa">
+            <label for="sa">Sms Alert</label>
+        </div>
+        <!--button tag for buttons-->
+        <div>
+            <!-- type="submit" attribute in button is if you press this it will sumbit -->
+            <button type="submit">Signup</button>
+            <!-- type="rest" attribute in button:it will reset to initial stage -->
+            <button type="reset">Reset</button>
+            <!--If we want to press any image to get the form submitted -->
+            <input type="image" src="Restaurant/images/submit.jpg" alt="submit" width="100">
+        </div>
+        
+    </form>
+</body>
+</html>

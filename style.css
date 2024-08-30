@@ -1,0 +1,371 @@
+/* CSS-Cascading Style Sheet */
+/* Universal Selector:*  */
+/* For Selecting Id Selector:Hash(#) */
+/* For Selecting Class Selector:Dot(.) */
+/* For Selecting child tag:parenttag>childtag{} */
+/* Descendent tags : Any tag which comes under a parent tag: parenttag descendenttag{} */
+/* For Selecting Sibling tag:Ex:h1~h3 */
+/* Adjacent Sibling Selector:Ex:h1+h2 */
+/* There is an attribute named !important; which is prioritized First */
+/* Font - serif(will have strokes)(Times-new-roman,georgia),sans-serif(arial),monospace(width of every letter will be same)(Courier new),cusive(Handwriting like),Fantasy(Decorative Fonts,Used for Headings) */
+/*max:255*/ /*all 255 white color*/
+/*To write the color in hash values convert rgb values into hexadecimal that is lcm by 16*/
+/*The Fourth Value in the rgba represents opacity level which is 0 to 1 */
+/*Default  font size in px:16,percentage:100,1em=default 16px:changes accordingly)*/
+
+*{
+    background-color:rgb(221, 241, 252);
+}
+h1{
+    color: black;
+}
+.top{
+    border:hidden;
+    display:flex;
+    /* background-color: rgba(169, 169, 252,0.3); */
+}
+#path{
+    border:1px solid rgba(169, 169, 252);
+    border-radius:1000px;
+    -moz-border-radius:1000px;
+    -webkit-border-radius:1000px;
+    color: rgba(169, 169, 252,0.5);
+    background-color:rgba(169, 169, 252);
+    width: fit-content;
+}
+.top>div#span1{
+    /* border:2px solid black; */
+    border: hidden;
+    padding:10px;
+    /* background-color:aliceblue;  */
+    /* background-color: rgba(169, 169, 252,0.3); */
+    margin-top:10px;
+    margin-bottom: 10px;
+    width:fit-content;
+}
+.top>div#span1>a>b{
+    font-size: larger;
+    color:rgb(176, 176, 209);
+}
+#italic{
+    color:rgba(169, 169, 252);
+    font-size: large;
+}
+.top>div#span1>a>b:hover{
+    color:rgba(169, 169, 252);
+}
+.top>div#span2{
+    border:hidden;
+    border-radius:20px;
+    padding-top: 15px;
+    padding-bottom:15px;
+    /* margin-left:250px;
+    margin-right:250px; */
+    background-color:rgba(169, 169, 252,0.3);
+    margin-top:10px;
+    margin-bottom: 10px;
+    width:fit-content;
+    position: relative;
+    left:18%;
+}
+.top>div#span2>a{
+    border:1px solid rgb(137, 37, 195);
+    border-radius: 100px;
+    -moz-border-radius:100px;
+    -webkit-border-radius:100px;
+    padding:5px;
+    background-color:rgb(169, 169, 252);
+    margin-top:20px;
+    margin-bottom: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.top>div#span2>a:hover{
+    background-color:aliceblue;
+    color:rgb(137, 37, 195);
+    transition: 0.5s;
+}
+.top>div#span3{
+    border: hidden;
+    /* border:2px solid black; */
+    width:fit-content;
+    margin-top:10px;
+    margin-bottom: 10px;
+    position: relative;
+    left:18%;
+}
+.top>div#span3>a>img{
+    border:hidden;
+    border-radius: 100px;
+    padding:5px;
+    margin-left: 2px;
+}
+.top>div#span3>a>img:hover{
+    background-color: rgba(169, 169, 252,0.5);
+}
+.below_top>h1{
+    border:hidden;
+    width: fit-content;
+    color:rgb(221, 241, 252);
+    cursor:default;
+}
+#name{
+    border:hidden;
+    /* border:2px solid black; */
+    width:fit-content;
+    font-style:italic;
+    font-size: 2.5em;
+    color:rgb(169, 169, 252);
+    position: absolute;
+    top:20%;
+    left: 40%;
+}
+#education{
+    border:hidden;
+    width:fit-content;
+    font-style:italic;
+    font-size: 2em;
+    color:rgb(169, 169, 252);
+    position: absolute;
+    top:26%;
+    left: 40%;
+}
+#senthil_portfolio_image{
+    width:425px;
+    border:8px solid aliceblue;
+    border-radius:1000px;
+    -moz-border-radius:1000px;
+    -webkit-border-radius:1000px;
+    position: relative;
+    left:8%;
+}
+#senthil_portfolio_image:hover{
+    border:8px solid rgb(201, 201, 245);
+    transition: 0.5s;
+}
+.below_image>h1{
+    position: relative;
+    left:7%;
+    font-style: italic;
+    color:rgb(169, 169, 252);
+}
+/* .grid_1{
+    display: flex;
+    flex-direction: column;
+    position:relative;
+} */
+#about{
+    border: hidden;
+    /* border:2px solid black; */
+    /* padding-left:500px; */
+    position: absolute;
+    top:35%;
+    left: 40%;
+}
+#about>h2{
+    color: rgb(169, 169, 252);
+    font-style:italic;
+    font-size:1.6em;
+}
+#about>p{
+    min-width:100px;
+    max-width:500px;
+    min-height: 100px;
+    font-size: larger;
+    text-align:justify;
+    border:10px solid aliceblue;
+    border-radius:50px;
+    -moz-border-radius:50px;
+    -webkit-border-radius:50px;
+    border-width: 10px;
+     /* border-image:url(/borderimage.jpg)40 round; */
+    /* overflow:auto; */
+    padding:25px;
+    /* box-shadow:10px 10px 5px grey; */
+    color:rgb(106, 125, 130);
+    font-style:italic;
+}
+#about>p:hover{
+    box-shadow:none;
+    border:5px solid aliceblue;
+    border-color:rgb(169, 169, 252);
+    color:rgb(169, 169, 252);
+    transition: 0.4s;
+}
+a{
+    text-decoration:none;/*To remove the line under the link*/
+    color:rgb(0,0,0);
+    font-family:'Times New Roman', Times, serif; 
+}
+a:hover{
+    color:rgb(140,180,200);
+}
+#resume_link_box{
+    padding:15px;
+    border:hidden;
+    border-radius: 20px;
+    background-color:rgba(169, 169, 252,0.3);
+    width: fit-content;
+    position:relative;
+    top: 50%;
+}
+#resume_link_box>a{
+    border:1px solid rgb(137, 37, 195);
+    border-radius: 50px;
+    -moz-border-radius:50px;
+    -webkit-border-radius:50px;
+    margin-top:50px;
+    margin-bottom: 50px;
+    margin-left: 15px;
+    margin-right:15px;
+    padding:5px;
+    background-color:rgb(169, 169, 252);
+}
+#resume_link_box>a:hover{
+    background-color: aliceblue;
+    color:rgb(137, 37, 195);
+    transition: 0.5s;
+}
+#Contact_Information{
+    border:2px solid black;
+    border-radius: 25px;
+    background-color: rgb(196, 196, 241);
+}
+
+#Education{
+    border:2px solid black;
+    border-radius: 25px;
+    background-color: rgb(196, 196, 241);
+}
+
+#Skills{
+    border:2px solid black;
+    border-radius: 25px;
+    background-color: rgb(196, 196, 241);
+}
+#Work_Experience{
+    border:2px solid black;
+    border-radius: 25px;
+    background-color: rgb(196, 196, 241);
+}
+#Projects{
+    border:2px solid black;
+    border-radius: 25px;
+    background-color: rgb(196, 196, 241);
+}
+#resumeh3{
+    text-decoration:none;
+}
+#resumeh3:hover{
+    text-decoration: underline;
+    text-decoration-color:rgba(162, 214, 214);
+}
+ul>h4>a{
+    text-decoration: underline;
+}
+ul>h4>a:hover{
+    color:aliceblue;
+}
+.aqua{
+    background-color:rgb(196, 196, 241);
+}
+#contact{
+    color:rgb(169, 169, 252);
+    position: relative;
+    top:100%;
+    width:fit-content;
+
+}
+#contact>a{
+    border:2px solid rgba(140,180,240);
+    background-color:rgb(169, 169, 252);
+    border-radius: 5px;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    padding-left:5px;
+    padding-right: 5px;
+}
+#contact>a:hover{
+    background-color: aliceblue;
+    color:rgb(137, 37, 195);
+    transition: 0.5s;
+}
+/* #contact>a:visited{
+    color: grey;
+} */
+
+ul{
+    list-style-type: circle;
+    /* list-style-position: inside; */
+}
+li{
+    margin:10px ;
+}
+
+}
+.h2{
+    /* text-transform */
+    /* border:hidden;
+    border-radius:25px;
+    text-align: center;
+    margin: auto;
+    width: fit-content; */
+    
+}
+.h2:hover{
+    /* background-color:aliceblue;
+    border: 2px solid pink;
+    transition:0.1s; */
+}
+.h3{
+    /* border:hidden;
+    border-radius: 25px;
+    text-align: center;
+    width:fit-content;
+    margin: auto; */
+}
+.h3:hover{
+    /* background-color:aliceblue;
+    border: 2px solid pink;
+    transition:0.1s; */
+}
+.h4{
+    /* border: hidden;
+    border-radius:25px;
+    margin:auto;
+    padding: 10px;
+    letter-spacing:0.50px;
+    max-width:600px;
+    width:fit-content; */
+    /* word-spacing:1px; */
+    /* text-shadow:2px 2px 2px white; */
+}
+.h4:hover{
+    /* background-color:aliceblue;
+    border: 2px solid pink;
+    transition:0.1s;
+    text-decoration:dashed;
+    width: fit-content; */
+}
+
+#button{
+    /* border-radius:10px;
+    border:2px solid aliceblue;
+    border-style: double;
+    width:fit-content;
+    margin-left: auto; */
+    /* padding-left:1125px;
+    padding-right:1px; */
+}
+button{
+    /* border: hidden;
+    margin: auto;
+    font-weight:bolder; */
+}
+button:hover{
+    /* border-radius:25px;
+    background-color: aliceblue;
+    transition:0.5s; */
+
+    
+}

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--title attribute in img will give you the typed name when you place the cursor over it-->
+    <!--For Giving Image:img tag , For Adjusting the Size: Heigth and width attributes-->
+    <!--We can also give the image in the figure tag , so that we can give the caption for that-->
+    <figure>
+        <img src="images/swiggylogo.jpg" alt="swiggy" height="100" width="100" title="swiggy">
+        <figcaption><h1>Swiggy</h1></figcaption>
+    </figure>
+    
+    <a href="index.html">HOME</a>
+    <a href="about.html">ABOUT</a>
+    <a href="menu.html">MENU</a>
+    <br><br>
+    <!--To give tables:table tag
+    thead:table head
+    tr:table row
+    th:Table data in bold
+    td:table data
+    tbody:table body
+    tfoot:table foot
+    To make the same cell for more rows:rowspan attribute
+    To make the same cell for more column:columnspan attribute-->
+    <!--The styling can be given in css such as border,cellpadding nand spacing-->
+    <table border="5" cellpadding="5" cellspacing="5">
+        <thead>
+            <tr>
+                <th>Time</th>
+                <th>Item</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="4">Morning</td>
+                <td>Idly</td>
+                <td>$1</td>
+            </tr>
+            <tr>
+                <td>Dosa</td>
+                <td>$2</td>
+            </tr>
+            <tr>
+                <td>Poori</td>
+                <td>$2</td>
+            </tr>
+            <tr>
+                <td>Pongal</td>
+                <td>$2</td>
+            </tr>
+            <tr>
+                <td rowspan="3">Lunch</td>
+                <td>Fried Rice</td>
+                <td>$4</td>
+            </tr>
+            <tr>
+                <td>Noodles</td>
+                <td>$5</td>
+            </tr>
+            <tr>
+                <td>Biriyani</td>
+                <td>$5</td>
+            </tr>
+            <tr>
+                <td rowspan="3">Dinner</td>
+                <td>Chapathi</td>
+                <td>$2</td>
+            </tr>
+            <tr>
+                <td>Parotta</td>
+                <td>$3</td>
+            </tr>
+            <tr>
+                <td>Pasta</td>
+                <td>$4</td>
+            </tr>
+        </tbody>
+        <tfoot></tfoot>
+    </table>
+    
+    <h2>MENU</h2>
+    <a href="#morning">Morning</a>
+    <a href="#lunch">Lunch</a>
+    <a href="#dinner">Dinner</a>
+    <ul>
+        <!--To scroll to a specific Section of a file:Give some id name for that specfic section
+    To access it:filename#idname-->
+        <h3 id="morning">Morning</h3>
+        <ul>
+            <!--To align the image:Use align attribute(Top,left,Right)-->
+            <img src="images/idly.jpg" alt="dosa" height="100" width="100" align="Top">
+            <li>Idly $1</li>
+            <br><br>
+            <img src="images/dosa.jpg" alt="dosa" height="100" width="100" align="Top">            <li>Dosa $2</li>
+            <br><br>
+            <img src="images/poori.jpg" alt="dosa" height="100" width="100" align="Top">
+            <li>Poori $2</li>
+            <br><br>
+            <img src="images/pongal.jpg" alt="dosa" height="100" width="100" align="Top">
+            <li>Pongal $2</li>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        </ul>
+        <!--To scroll to a specific Section of a file:Give some id name for that specfic section
+    To access it:filename#idname-->
+        <h3 id="lunch">Lunch</h3>
+        <ul>
+            <!--To align the image:Use align attribute(Top,left,Right)-->
+            <img src="images/friedrice.jpg" alt="dosa" height="100" width="100" align="Top">
+            <li>Fried Rice $4</li>
+            <br><br>
+            <img src="images/noodles.jpg" alt="dosa" height="100" width="100" align="Top">
+            <li>Noodles $5</li>
+            <br><br>
+            <img src="images/biriyani.jpg" alt="dosa" height="100" width="100" align="Top">
+            <li>Biriyani $5</li>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        </ul>
+        <!--To scroll to a specific Section of a file:Give some id name for that specfic section
+    To access it:filename#idname-->
+        <h3 id="dinner">Dinner</h3>
+        <ul>
+            <!--To align the image:Use align attribute(Top,left,Right)-->
+            <img src="images/chapathi.jpg" alt="dosa" height="100" width="100" align="Top">
+            <li>Chapathi $2</li>
+            <br><br>
+            <img src="images/parotta.jpg" alt="dosa" height="100" width="100" align="Top">
+            <li>Parotta $3</li>
+            <br><br>
+            <img src="images/pasta.jpg" alt="dosa" height="100" width="100" align="Top">
+            <li>Pasta $4</li>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        </ul>
+    </ul>
+    <!--For giving links(Hyperlink) :a tag(anchor tag)-->
+    <h4><a href="https://www.swiggy.com/">Order Online</a></h4>
+    <!--The above one will open the link in the same tab.
+    To open in the Different tab:You have to give target="_blank"-->
+    <h4><a href="https://www.swiggy.com/" target="_blank">Order Online</a></h4>
+    <!--To go to the parent folder:give "../" before the file name -->
+    <!--To go to the  grand parent folder:give "../../" before the file name -->
+    <a href="Services/contact.html">Contact us</a>
+</body>
+</html>
